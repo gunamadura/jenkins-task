@@ -1,4 +1,4 @@
-name: CI Maven Pipeline
+name: CI Maven Pipeline/Worflows
 
 # This workflow triggers on push and pull request events on the main branch
 on:
