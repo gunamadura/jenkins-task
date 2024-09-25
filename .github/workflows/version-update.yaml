@@ -21,9 +21,10 @@ jobs:
         sed -i 's/<version>.*<\/version>/<version>1.0.0-SNAPSHOT<\/version>/g' pom.xml
 
     - name: Commit and Push changes
-      run: 
+      run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add pom.xml
         git commit -m "Update version in pom.xml"
         git push
+      shell: bash
