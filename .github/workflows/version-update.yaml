@@ -22,9 +22,11 @@ jobs:
 
     - name: Commit and Push changes,Configure Git user
       run: |
+        git config --local user.name "GitHub Actions"
+        git config --local user.email "actions@github.com"
         git add pom.xml
         git commit -m "updated version in pom.xml"
         git fetch origin
         git pull origin version-1 --rebase
-        git push origin HEAD:refs/heads/dynamic-vars-2
+        git push origin HEAD:refs/heads/dynamic-vars-3
 
