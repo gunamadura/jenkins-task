@@ -27,6 +27,6 @@ jobs:
         git add pom.xml
         git commit -m "updated version in pom.xml"
         git fetch origin
-        git pull origin version-1 --rebase
-        git push origin HEAD:refs/heads/dynamic-vars-3
+        git pull origin dynamic-vars-4 --rebase
+        git push origin HEAD:refs/heads/dynamic-vars-4
 
