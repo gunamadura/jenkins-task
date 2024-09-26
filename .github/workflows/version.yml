@@ -43,4 +43,4 @@ jobs:
         run: |
           git add pom.xml
           git commit -m "Update version to $NEW_VERSION"
-          git push origin master
+          git push origin main
